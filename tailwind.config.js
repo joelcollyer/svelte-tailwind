@@ -1,7 +1,15 @@
 const production = !process.env.ROLLUP_WATCH;
 
 module.exports = {
-  theme: {},
+  theme: {
+    colors: {
+      transparent: "transparent",
+      white: "#ffffff",
+      black: "#000000",
+      violet: "#270245",
+      magenta: "#FE18D3",
+    },
+  },
   plugins: [],
   future: {
     purgeLayersByDefault: true,

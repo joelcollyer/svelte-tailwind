@@ -1,8 +1,6 @@
 <script lang="ts">
   import Styles from "./Styles.svelte";
   import Footer from "./Footer.svelte";
-
-  export let name = "Joel";
 </script>
 
 <svelte:head>
@@ -12,13 +10,10 @@
 
 <Styles />
 
+<div id="root">
 <main class="container relative mx-auto">
-  <h1 class="text-3xl font-bold text-center">Hello {name}!</h1>
-  <Footer />
+    <h1 class="text-3xl font-bold text-center">Hello there!</h1>
 </main>
 
-<style global lang="postcss">
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-</style>
+  <Footer />
+</div>
